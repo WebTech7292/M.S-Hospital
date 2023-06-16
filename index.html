@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.S Hospital | The Best Hospital in your area</title>
+</head>
+
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        background: #eee;
+    }
+    .header{
+        width: 100%;
+        height: 100vh;
+        background-image: url();
+        background-size: cover;
+        background-position: center;
+    }
+    .container{
+    padding: 10px 10%;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+    nav ul li a{
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+        transition: 0.5s;
+    }
+    nav ul li a:hover{
+        color: #000;
+    }
+    .header .container nav h1{
+        font-size: 35px;
+    }
+    .header-text{
+        margin-top: 20%;
+        font-size: 30px;
+    }
+    .header-text h1{
+        font-size: 60px;
+        margin-top: 20px;
+    }    
+    /* -------------------------------2nd pg---------------- */
+    .about{
+            padding: 80px 0;
+            color: #000;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .about-col-1{
+            flex-basis: 35%;
+
+        }
+        .about-col-1 img{
+            /* width: 100%; */
+            width: 400px;
+            height: 300px;
+            border-radius: 15px;
+        }
+        .about-col-2{
+            flex-basis: 60%;
+        }
+        .sub-title{
+            font-size: 60px;
+            font-weight: 600;
+            color: #000;
+        }
+        .tab-tiles{
+            display: flex;
+            margin: 20px 0 40px;
+        }
+        .tab-links{
+            margin-right: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+        .tab-links::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #000;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: 0.5s;
+        }
+        .tab-links.active-link::after{
+            width: 50%;
+        }
+        .tab-contents ul li{
+            list-style: none;
+            margin: 10px 0;
+        }
+        .tab-contents ul li span{
+            color: #080808;
+            font-size: 14px;
+        }
+        .tab-contents{
+            display: none;
+        }
+        .tab-contents.active-tab{
+            display: block;
+        }
+    /* ---------------------------------3rd pg------------------ */
+    .btn{
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid #000;
+            padding: 14px 50px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #fff;
+            transition: background 0.5s;
+        }
+    /* ----------------------------4th pg----------------------------- */
+    .contact-left{
+        flex-basis: 35%;
+    }
+    .contact-right{
+        flex-basis: 60%;
+    }
+    .contact-left p{
+        margin-top: 30px;
+    }
+    .contact-left p i{
+        color: #000;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+    .social-icons{
+        margin-top: 30px;
+    }
+    .social-icons a{
+        text-decoration: none;
+        font-size: 30px;
+        margin-right: 15px;
+        color: #ababab;
+        display: inline-block;
+        transition: transform 0.5s;
+    }
+    .social-icons a{
+        color: #000;
+        transform: translateY(-5px);
+}
+    .btn.btn2{
+        display: inline-block;
+        background: #000;
+    }
+    .contact-right form{
+        width: 100%;
+    }
+    form input, form textarea{
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: #262626;
+        padding: 15px;
+        margin: 15px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+    form .btn2{
+        padding: 14px 60px;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .copyright{
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        background-color: #262626;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+    .copyright p{
+        background: #262626;
+        color: #eee;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <h1>S.M Hospital.</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Connect doctor</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Wecome to our website</p>
+                <h1>Don't compromise with your health <br> Always choose the best</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------2nd pg----------------------------------- -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="peakpx (2).jpg" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem laudantium, impedit recusandae, consequuntur vitae accusamus tempore omnis commodi nemo repellat illum nobis quia quibusdam minima? Eaque, repudiandae? Voluptatum eos, vitae libero fugit laborum odit. Reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptas.</p>
+                    <div class="tab-tiles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Our services</p>
+                        <p class="tab-links" onclick="opentab('experience')">Our doctors</p>
+                        <p class="tab-links" onclick="opentab('education')">Others</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Heart specialist</span><br>Dr. Masoom al bukhar ul Raza</li>
+                            <li><span>Neuro Scientist</span><br>Dr. Rizwan</li>
+                            <li><span>Skin specialist</span><br>Dr. Faiz Ali</li>
+                            <li><span>Eye specialist</span><br>Dr. Tousif Husain</li>
+                            <li><a href="">Learn more</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ---------------------------4th pg-------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>M. S Hospital@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0987654321</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download our app</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © m.s hospita. Made with WebTech Thankyou for wisiting our website</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200";
+        }
+
+    </script>
+
+</body>
+</html>
